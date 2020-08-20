@@ -16,6 +16,7 @@ let Game = (function () {
     let diceLabel2;
     //Roll Button
     let rollButton;
+    let myDiceBackground;
     //Diace Button
     let diceButton1;
     let diceButton2;
@@ -136,6 +137,10 @@ let Game = (function () {
     function Main() {
         console.log(`%c Main Function`, "color: grey; font-size: 14px; font-weight: bold;");
         //Game Labels
+        //console.log(`%c Main Function`, "color: grey; font-size: 14px; font-weight: bold;");
+        myDiceBackground = new Core.GameObject("background", Config.Game.CENTER_X, Config.Game.CENTER_Y, true );
+        stage.addChild(myDiceBackground);
+
         diceLabel1 = new UIObjects.Label(randomNumber1, "40px", "Consolas", "#000000", Config.Game.CENTER_X + 150, Config.Game.CENTER_Y + 20, true);
         stage.addChild(diceLabel1);
         diceLabel2 = new UIObjects.Label(randomNumber2, "40px", "Consolas", "#000000", Config.Game.CENTER_X - 150, Config.Game.CENTER_Y + 20, true);

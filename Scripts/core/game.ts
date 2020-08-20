@@ -20,6 +20,7 @@ let Game = (function(){
     let diceButton2: UIObjects.Button;
      //To inatialize the 1 dice
     let exampleObject: Core.GameObject;
+    let myDiceBackground: Core.GameObject;
     let randomNumber1: 0;
     let randomNumber2: 0;
     let assetManifest = 
@@ -77,25 +78,25 @@ let Game = (function(){
         let imageSrc;
         switch (dicesImg) {
             case 0:
-                imageSrc = "../Assets/images/blank.png";
+                imageSrc = "./Assets/images/blank.png";
                 break;
             case 1:
-                imageSrc = "../Assets/images/1.png";
+                imageSrc = "./Assets/images/1.png";
                 break;
             case 2:
-                imageSrc = "../Assets/images/2.png";
+                imageSrc = "./Assets/images/2.png";
                 break;
             case 3:
-                imageSrc = "../Assets/images/3.png";
+                imageSrc = "./Assets/images/3.png";
                 break;
             case 4:
-                imageSrc = "../Assets/images/4.png";
+                imageSrc = "./Assets/images/4.png";
                 break;
             case 5:
-                imageSrc = "../Assets/images/5.png";
+                imageSrc = "./Assets/images/5.png";
                 break;
             case 6:
-                imageSrc = "../Assets/images/6.png";
+                imageSrc = "./Assets/images/6.png";
                 break;
             }
         return imageSrc;
@@ -126,6 +127,10 @@ let Game = (function(){
     {
         console.log(`%c Main Function`, "color: grey; font-size: 14px; font-weight: bold;");
         //DisplayBasicUI();
+        console.log(`%c Main Function`, "color: grey; font-size: 14px; font-weight: bold;");
+        myDiceBackground = new Core.GameObject("background", Config.Game.CENTER_X, Config.Game.CENTER_Y, true );
+        stage.addChild(myDiceBackground);
+
         diceLabel1 = new UIObjects.Label("A Dice Label", "40px", "Consolas", "#000000", Config.Game.CENTER_X + 90, Config.Game.CENTER_Y + 40, true);
         stage.addChild(diceLabel1);
 
