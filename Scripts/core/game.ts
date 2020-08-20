@@ -1,3 +1,10 @@
+/*
+Name        : Shankar Sigdel
+Student ID  : 301110925
+Program     : rollDice.ts
+Course      : COMP125-M2020-Test
+Professor   : Tom Tsiliopoulos 
+*/
 let Game = (function(){
     // variable declarations
     let canvas:HTMLCanvasElement = document.getElementsByTagName('canvas')[0];
@@ -129,32 +136,6 @@ let Game = (function(){
             console.log("example button clicked");
         });
     }
-        /*
-        function DisplayOtherUI():void
-        {
-            exampleLabel = new UIObjects.Label("Another Label", "40px", "Consolas", "#000000", Config.Game.CENTER_X, Config.Game.CENTER_Y, true);
-            stage.addChild(exampleLabel);
-    
-            exampleButton = new UIObjects.Button("startButton", Config.Game.CENTER_X, Config.Game.CENTER_Y + 100, true);
-            stage.addChild(exampleButton);
-    
-            exampleButton.on("click", ()=>{
-                console.log("example button clicked");
-                
-                let randomNumber = Util.Mathf.RandomRange(1, 6, true);
-                exampleLabel.setText(`It rolled: ${randomNumber.toString()} times!`);
-                let image = assets.getResult(randomNumber.toString()) as HTMLImageElement;
-                exampleButton.image = image;
-            });
-            
-    
-            //This is to display the 1 dice
-            exampleObject = new Core.GameObject("1", Config.Game.CENTER_X, Config.Game.CENTER_Y + -120, true);
-            stage.addChild(exampleObject);
-    
-            //this is to display the 2 dice
-            //let newImage = assets.getResult("2") as HTMLImageElement;
-            //exampleObject.image = newImage;
-        }*/
+       
     window.addEventListener('load', Preload);
 })();
