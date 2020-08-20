@@ -81,25 +81,25 @@ let Game = (function () {
         let imageSrc;
         switch (dicesImg) {
             case 0:
-                imageSrc = "../Assets/images/blank.png";
+                imageSrc = "./Assets/images/blank.png";
                 break;
             case 1:
-                imageSrc = "../Assets/images/1.png";
+                imageSrc = "./Assets/images/1.png";
                 break;
             case 2:
-                imageSrc = "../Assets/images/2.png";
+                imageSrc = "./Assets/images/2.png";
                 break;
             case 3:
-                imageSrc = "../Assets/images/3.png";
+                imageSrc = "./Assets/images/3.png";
                 break;
             case 4:
-                imageSrc = "../Assets/images/4.png";
+                imageSrc = "./Assets/images/4.png";
                 break;
             case 5:
-                imageSrc = "../Assets/images/5.png";
+                imageSrc = "./Assets/images/5.png";
                 break;
             case 6:
-                imageSrc = "../Assets/images/6.png";
+                imageSrc = "./Assets/images/6.png";
                 break;
         }
         return imageSrc;
