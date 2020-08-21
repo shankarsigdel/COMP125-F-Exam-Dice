@@ -113,7 +113,7 @@ let Game = (function(){
         generateRandom();
 
         let imagesForDice1 = switchImage(randomNumber1);
-        var imagesForDice2 = switchImage(randomNumber2);
+        let imagesForDice2 = switchImage(randomNumber2);
         diceButton1 : imagesForDice1;
         diceButton2 : imagesForDice2;
         diceLabel1 : randomNumber1;
